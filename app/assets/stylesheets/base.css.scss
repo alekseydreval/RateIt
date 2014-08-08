@@ -1,0 +1,49 @@
+body { padding-top: 70px; }
+
+.centered {
+  margin: 0 auto;
+  float: none;
+}
+
+.topic {
+  min-height: 200px;
+  // background-color: #FFFFFF;
+  padding: 15px;
+}
+
+.placeholder {
+  width: 140px;
+  height: 140px;
+  background-image: url(140x140.gif);
+}
+
+.reply {
+  height: 200px;
+  display: none;
+}
+
+#decision {
+  margin-top: 65px;
+}
+
+#decision label:first-child {
+  background-color: #29AD49;
+  border-color: #29AD49;
+}
+
+#decision label:first-child:hover {
+  background-color: #006017;
+  border-color: #006017;
+}
+
+#compose textarea {
+  margin-top: 15px;
+}
+
+.compose-header {
+  margin: 25px 0;
+}
+
+.reply .tab-content {
+  margin-bottom: 20px;
+}

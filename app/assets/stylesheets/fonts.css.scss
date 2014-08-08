@@ -1,0 +1,14 @@
+
+.vertical-aligned-content > * {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.icon {
+  height: 19px;
+  width: 13px;
+}
+
+.icon-hot {
+  background: url('sprites.png') no-repeat 0 -75px;
+}

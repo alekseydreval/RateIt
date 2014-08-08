@@ -1,0 +1,51 @@
+.row
+  .col-md-8.centered
+    .btn-group.btn-group-justified
+      %a.btn.btn-default 
+        %i.fa.fa-random
+        Random
+      %a.btn.btn-default
+        %i.fa.fa-cubes
+        My interests
+      %a.btn.btn-default.vertical-aligned-content
+        %i.icon.icon-hot
+        %span Popular
+    .topic.well
+      .row
+        .col-md-3
+          .img-rounded.pull-left.placeholder
+        .col-md-9
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          .btn-group.btn-group-justified#decision{"data-toggle" => "buttons"}
+            %label.btn.btn-primary
+              %input{type: "radio"}/
+              Like
+            %label.btn.btn-primary
+              %input{type: "radio"}/
+              Dislike
+          .reply
+            %h3.compose-header Why?
+            %ul.nav.nav-tabs{role: 'tablist'}
+              %li.active 
+                %a{'role'=>'tab', 'data-toggle'=>'tab', 'href' => '#pick'} Pick one option
+              %li
+                %a{'role'=>'tab', 'data-toggle'=>'tab', 'href' => '#compose'} Have different opinion?
+            .tab-content
+              .tab-pane.active#pick
+                .radio
+                  %label
+                    %input#optionsRadios1{checked: "checked", name: "optionsRadios", type: "radio", value: "option1"}/
+                    Option one is this and that—be sure to include why it's great
+                .radio
+                  %label
+                    %input#optionsRadios2{name: "optionsRadios", type: "radio", value: "option2"}/
+                    Option two can be something else and selecting it will deselect option one
+                .radio
+                  %label
+                    %input#optionsRadios3{name: "optionsRadios", type: "radio", value: "option3"}/
+                    Option three
+              .tab-pane#compose
+                %textarea.form-control{rows: 3}
+            %button.btn.btn-primary.pull-right Rate It!
+
+      .clear
